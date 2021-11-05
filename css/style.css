@@ -301,6 +301,7 @@ body{
 .card-2{
     margin-top: 2.25rem;
     background-color:var(--color-white);
+    flex-direction: row-reverse;
 }
 .card-2 .image__content{
     margin-left: 4.3rem;
@@ -404,6 +405,125 @@ body{
 
 .card-3 .info__image{
     width: 60%;
+}
+
+/* #endregion */
+
+/* #region Price */
+
+.price{
+    padding-top:6.25rem ;
+    padding-bottom:10.75rem;
+}
+
+.price__title{
+    font-size:2.25rem;
+    text-align: center;
+}
+.price__cards{
+    margin-top:3.125rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.price__card{
+    padding: 3rem 8rem 5rem 8rem;
+    border-radius: 20px;
+    position: relative;
+    box-shadow: 0px 0px 46px 17px var(--color-light-grey);
+}
+
+.card--basic{
+    border:1px solid var(--color-redish);
+    transform: scale(0.95);
+}
+.card--professional {
+    border: 1px solid var(--color-primary);
+}
+.card--premium {
+    border: 1px solid var(--color-green);
+    transform: scale(0.95);
+}
+
+.price__type{
+    font-size:1.25rem;
+    font-weight: bold;
+}
+
+.price__amount{
+    margin-top: 0.875rem;
+    font-size: 2.875rem;
+    font-family: 'Open Sans',
+    sans-serif;
+    font-weight: 300;
+}
+
+.amount--basic{
+    color:var(--color-redish);
+}
+.amount--professional {
+    color: var(--color-primary);
+}
+.amount--premium {
+    color: var(--color-green);
+}
+
+.price__limit{
+    margin-top: 0.75rem;
+    font-size: 0.75rem;
+    font-weight:bold;
+}
+
+.card--basic .price__offer{
+    margin-top: 6rem;
+}
+
+.card--professional .price__offer,
+.card--premium .price__offer
+ {
+    margin-top: 4.5rem;
+}
+
+.price__offer li {
+    margin-bottom: 1.5rem;
+    font-size:0.875rem;
+    font-family: 'Open Sans',
+    sans-serif;
+}
+
+.price__offer .offer--yes::before{
+    content:url("../assets/Checkmark-1.svg");
+    display:inline-block;
+    margin-right: 10px;
+}
+
+.price__offer .offer--no::before{
+    content:url("../assets/Close.svg");
+    display:inline-block;
+    margin-right: 10px;
+}
+
+.price__btn{
+    position: absolute;
+    bottom: -1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size:0.875rem;
+    font-weight:bold;
+    padding: 1rem 3.5rem;
+    border-radius: 20px;
+    color:var(--color-white);
+}
+
+.btn--basic{
+    background:var(--color-redish);
+}
+.btn--professional {
+    background:var(--color-primary);
+}
+.btn--premium {
+    background:var(--color-green);
 }
 
 /* #endregion */
