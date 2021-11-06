@@ -541,7 +541,7 @@ body{
 .question__text{
     margin-top: 1rem;
     text-align: center;
-    display: inline-block;
+    width: 50%;
     padding: 0 7.125rem;
 
 }
@@ -583,8 +583,7 @@ body{
 
 
 .question__form{
-    justify-self: flex-end;
-    width: 40%;
+    width: 50%;
     font-family: var(--open-sans);
 }
 
