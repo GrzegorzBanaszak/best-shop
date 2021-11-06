@@ -148,14 +148,15 @@
                 </div>
             </div>
             <form class="question__form">
-                <label for="name">name</label>
+                <label class="question_label" for="name">name</label>
                 <input name="name" type="text">
-                <label for="email">email</label>
+                <label class="question_label" for="email">email</label>
                 <input name="email" type="text">
-                <div class="question__conditions">
-                    <input type="radio" name="conditions">
+                <label class="question__conditions">
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
                     <p>I hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</p>
-                </div>
+                </label>
                 <button class="question__btn" type="submit">Send</button>
             </form>
         </div>

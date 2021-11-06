@@ -583,12 +583,13 @@ body{
 
 
 .question__form{
+    display: flex;
+    flex-direction: column;
     width: 50%;
     font-family: var(--open-sans);
 }
 
-.question__form label{
-    width: 100%;
+.question_label {
     color: var(--color-primary);
     font-size:0.75rem;
     font-weight:700;
@@ -597,44 +598,59 @@ body{
 }
 
 .question__form input[type=text]{
-    width: 100%;
     border: none;
     border-bottom: 1px solid var(--color-black);
     padding: 0.75rem 0.5rem 0.25rem 0.75rem;
     margin-bottom: 2.625rem;
 }
 
-.question__conditions{
+.question__conditions {
+
     margin-bottom:1.25rem;
+    position: relative;
+    display: block;
+    cursor:pointer;
 }
 
 .question__conditions p{
-    display:inline-block;
     font-size:0.75rem;
     color:var(--color-gray);
-    margin-left: 10px;
-    width: 90%;
+    margin-left: 35px;
+    line-height: 17px;
 }
 
-.question__conditions input[type=radio]{
-    float: left;
-    width: 1.5rem;
-    height: 1.5rem;
-    border:1px solid var(--color-gray);
-    border-radius:5px;
-    -webkit-appearance: none;
+.question__conditions input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
 }
-.question__conditions input[type=radio]:checked{
+
+.question__conditions .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border: 1px solid var(--color-gray);
+    background-color: var(--color-white);
+    border-radius: 5px;
+}
+
+
+.question__conditions input:checked ~ .checkmark {
     background:url("../assets/Checkmark.svg");
     background-position: center;
     background-repeat: no-repeat;
+    background-size: 50%;
 }
 
 .question__btn{
     font-size: 0.875rem ;
     font-weight: 700;
     padding: 1.25rem 6.125rem;
-    float:right;
+    align-self: flex-end;
     background: var(--color-primary);
     color: var(--color-white);
     border-radius: 25px;
