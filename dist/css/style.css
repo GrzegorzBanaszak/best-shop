@@ -603,6 +603,69 @@ textarea {
     right: auto;
   }
 }
+/* #region Front */
+.front-section {
+  margin-top: 4rem;
+  height: calc(100vh - 4rem);
+}
+
+.front-section__content {
+  height: 70%;
+  padding: 1em;
+  text-align: center;
+}
+
+.front-section__title {
+  margin-top: 4em;
+  font-size: 3rem;
+}
+
+.front-section__text {
+  font-family: "Open Sans", sans-serif;
+  margin-top: 1.25rem;
+  margin-bottom: 2.25rem;
+  font-size: 1rem;
+}
+
+.front-section__btn {
+  display: block;
+  font-size: 1em;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  padding: 1.5rem 1rem;
+  background: var(--color-primary);
+  color: var(--color-white);
+  border-radius: 2rem;
+}
+
+.front-section__image {
+  height: 30%;
+  background: url("/assets/Background.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* #endregion */
+@media screen and (min-width: 1000px) {
+  .front-section__content {
+    height: 50%;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .front-section__btn {
+    width: 30%;
+  }
+
+  .front-section__image {
+    background-size: cover;
+    height: 50%;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -637,49 +700,6 @@ body {
   width: 100%;
 }
 
-/* #region Front */
-.front-section {
-  height: calc(100vh - 4rem);
-}
-
-.front-section__content {
-  height: 50%;
-  flex-direction: column;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.front-section__title {
-  font-size: 3rem;
-}
-
-.front-section__text {
-  font-family: "Open Sans", sans-serif;
-  margin-top: 1.25rem;
-  margin-bottom: 2.25rem;
-  font-size: 1rem;
-}
-
-.front-section__btn {
-  font-size: 1rem;
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
-  padding: 1.5rem 9.8rem;
-  background: var(--color-primary);
-  color: var(--color-white);
-  border-radius: 2rem;
-}
-
-.front-section__image {
-  height: 50%;
-  background: url("/assets/Background.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-/* #endregion */
 /* #region Popular */
 .popular {
   padding-top: 6.25rem;
