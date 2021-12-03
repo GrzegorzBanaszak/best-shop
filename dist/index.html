@@ -8,22 +8,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Raleway:wght@300;400;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
     <nav class="nav-top">
         <div class="nav-top_content container">
-            <div class="nav-top__logo">BestShop</div>
+            <div class="nav-top__banner">
+                <div class="nav-top__logo">BestShop</div>
+                <input class="nav_btn" type="checkbox" id="nav_btn"/>
+                <label class="nav_icon" for="nav_btn">
+                    <span class="navicon"></span>
+                </label>
+            </div>
             <ul class="nav-top__menu">
-                <li><a href="#">why os</a></li>
-                <li><a href="#">benefits</a></li>
-                <li><a href="#">prices</a></li>
-                <li><a href="#">contact</a></li>
+                <li class="menu_element"><a href="#">why os</a></li>
+                <li class="menu_element"><a href="#">benefits</a></li>
+                <li class="menu_element"><a href="#">prices</a></li>
+                <li class="menu_element"><a href="#">contact</a></li>
             </ul>
         </div>
     </nav>
-
+<!-- 
     <section class="front-section">
         <div class="front-section__content container">
             <h1 class="front-section__title">Sell More!</h1>
@@ -173,6 +178,8 @@
                 <a href="#" class="icon icon__facebook"></a>
             </div>
         </div>
-    </footer>
+    </footer> -->
+
+    <script src="main.js"></script>
 </body>
 </html>

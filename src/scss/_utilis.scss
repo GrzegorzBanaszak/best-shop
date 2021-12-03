@@ -1,0 +1,11 @@
+@mixin desktop {
+    @media screen and (min-width:1000px) {
+        @content;
+    }
+}
+
+@mixin container {
+    margin: 0 auto;
+    max-width: $cont-width;
+    width: 100%;
+}
