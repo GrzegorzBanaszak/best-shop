@@ -1,0 +1,236 @@
+/* #region Info */
+
+.info {
+    background-color: var(--color-light-grey);
+    padding: 6.5rem 0;
+}
+
+
+.info__card {
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+    padding: $padding-card;
+    margin: 0 $margin-card;
+    display: flex;
+    line-height: 2.5em;
+}
+
+.info__description{
+    line-height: 1.8em;
+}
+
+.card-1 {
+    background-color: var(--color-white);
+    flex-direction: column-reverse;
+}
+
+
+.card-1 .info__title {
+    padding-top: 5.75rem;
+    font-size: 2.25rem;
+}
+
+.card-1 .info__description {
+    font-family: 'Open Sans',
+        sans-serif;
+    position: relative;
+    margin-top: 1.75rem;
+    // padding-right: 12rem;
+    // padding-bottom: 5rem;
+    padding-bottom: 2em;
+    font-size: 1rem;
+}
+
+.card-1 .info__description::after {
+    display: none;
+    content: '';
+    width: 50%;
+    height: 5px;
+    background-color: var(--color-redish);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.image__content {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.card-1 .image__content{
+    width: 390px;
+}
+
+.card-1 .image__content::after {
+    content: '';
+    position: absolute;
+    // width: 11.25rem;
+    // height: 11.25rem;
+    width: 8em;
+    height: 8em;
+    transform: rotate(45deg);
+    border-radius: 30px;
+    background: var(--color-redish);
+    top: 6rem;
+    right: 0;
+
+}
+
+.card-1 .info__image {
+    position: relative;
+    height: 13.75rem;
+    margin-top: 7rem;
+    z-index: 2;
+}
+
+.card-2 {
+    margin-top: 2.25rem;
+    background-color: var(--color-white);
+    flex-direction: column-reverse;
+}
+
+.card-2 .image__content img {
+    position: relative;
+    width: 350px;
+    margin-left: 3em;
+}
+.card-2 .image__content::after {
+    content: '';
+    position: absolute;
+    width: 16rem;
+    height: 16rem;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.card-2 .info__image {
+    margin-top: 1rem;
+    height: 85%;
+    z-index: 2;
+}
+
+
+.card-2 .info__title {
+    padding-top: 5.75rem;
+    font-size: 2.25rem;
+}
+
+.card-2 .info__description {
+    font-family: 'Open Sans',
+        sans-serif;
+    position: relative;
+    margin-top: 1.75rem;
+    font-size: 1rem;
+    padding-bottom: 2em;
+}
+
+.card-2 .info__description::after {
+    display: none;
+    content: '';
+    width: 50%;
+    height: 5px;
+    background-color: var(--color-primary);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+.card-3 {
+    margin-top: 2.25rem;
+    border: none;
+    padding: 0;
+    background-color: var(--color-white);
+    flex-direction: column;
+}
+
+.card-3 .info__text {
+    background-color: var(--color-white);
+    border: 1px solid #E8E9ED;
+    border-radius: 5px;
+    padding: $padding-card;
+}
+
+.card-3 .info__title {
+    font-size: 2.25rem;
+}
+
+.card-3 .info__description {
+    font-family: 'Open Sans',
+        sans-serif;
+    position: relative;
+    margin-top: 1.75rem;
+    padding-bottom: 5rem;
+    font-size: 1rem;
+}
+
+.card-3 .info__description::after {
+    display: none;
+    content: '';
+    width: 50%;
+    height: 5px;
+    background-color: var(--color-green);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.card-3 .image__content {
+    background-color: var(--color-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.card-3 .info__image {
+    width: 60%;
+}
+
+/* #endregion */
+
+
+@include desktop{
+    .card-1 {
+        flex-direction: row;
+    }
+
+    .card-1 .info__text{
+        width: 50%;
+    }
+
+    .card-2{
+        flex-direction: row-reverse;
+    }
+
+    .card-2 .info__text{
+        width: 50%;
+    }
+    
+    .card-3{
+        flex-direction: row;
+        background-color: $color-light-grey;
+    }
+
+    .card-3 .info__text{
+        margin-right: 2em;
+        padding: 3.5rem 2em;
+    }
+    .card-1 .info__description,
+    .card-2 .info__description,
+    .card-3 .info__description {
+        padding-bottom: 3em;
+    }
+
+    
+    .card-1 .info__description::after,
+    .card-2 .info__description::after,
+    .card-3 .info__description::after {
+        display: block;
+    }
+
+}

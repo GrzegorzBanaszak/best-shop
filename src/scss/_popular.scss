@@ -1,0 +1,87 @@
+
+
+.popular {
+    padding-top: 6.25rem;
+    padding-bottom: 7.5rem;
+}
+
+.popular__title {
+    text-align: center;
+    font-size: 2.25rem;
+}
+
+.popular__content {
+    padding-top: 2rem;
+}
+
+.popular__item {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.popular__icon {
+    width: 4rem;
+    height: 4rem;
+    margin-left: 1.5rem;
+    border-radius: 50%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.popular__count {
+    padding: 1rem 0;
+    font-size: 1.25rem;
+    font-weight: 800;
+    letter-spacing: 5.9px;
+}
+
+.populat__text {
+    font-size: 1rem;
+    color: var(--color-gray);
+
+}
+
+.person-icon {
+    background-color: $color-redish;
+}
+
+.person-icon::after {
+    content: url("/assets/Person.svg");
+    position: absolute;
+    right: -15px;
+    top: 5px;
+}
+
+.eye-icon {
+    background-color: var(--color-primary);
+}
+
+.eye-icon::after {
+    content: url("/assets/Eye.svg");
+    position: absolute;
+    right: -20px;
+    top: 15px;
+}
+
+.catalog-icon {
+    background-color: var(--color-green);
+}
+
+.catalog-icon::after {
+    content: url("/assets/Catalog.svg");
+    position: absolute;
+    right: -20px;
+    top: 5px;
+}
+
+@include desktop{
+    .popular__content{
+        display: flex;
+        justify-content: space-around;
+        margin: 0 9rem;
+    }
+    .popular__content {
+        padding-top: 6.25rem;
+    }
+
+}
