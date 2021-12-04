@@ -10,7 +10,7 @@
 
 .question__text {
     text-align: left;
-    margin: 2em 0;
+    margin-bottom: 3em;
 }
 
 .question__title {
@@ -19,14 +19,14 @@
 }
 
 .question__description {
-    font-family: var(--open-sans);
+    font-family: $open-sans;
     margin-bottom: 2.75rem;
 }
 
 
 .question__contact p {
-    font-family: var(--open-sans);
-    color: var(--color-gray);
+    font-family: $open-sans;
+    color: $color-gray;
     font-size: 1rem;
     font-weight: 600;
     display: block;
@@ -52,11 +52,11 @@
 .question__form {
     display: flex;
     flex-direction: column;
-    font-family: var(--open-sans);
+    font-family: $open-sans;
 }
 
 .question_label {
-    color: var(--color-primary);
+    color: $color-primary;
     font-size: 0.75rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -65,7 +65,7 @@
 
 .question__form input[type=text] {
     border: none;
-    border-bottom: 1px solid var(--color-black);
+    border-bottom: 1px solid $color-black;
     padding: 0.75rem 0.5rem 0.25rem 0.75rem;
     margin-bottom: 2.625rem;
 }
@@ -80,7 +80,7 @@
 
 .question__conditions p {
     font-size: 0.75rem;
-    color: var(--color-gray);
+    color: $color-gray;
     margin-left: 35px;
     line-height: 17px;
 }
@@ -99,8 +99,8 @@
     left: 0;
     height: 25px;
     width: 25px;
-    border: 1px solid var(--color-gray);
-    background-color: var(--color-white);
+    border: 1px solid $color-gray;
+    background-color: $color-white;
     border-radius: 5px;
 }
 
@@ -117,8 +117,8 @@
     font-weight: 700;
     padding: 1.25rem 6.125rem;
     align-self: flex-end;
-    background: var(--color-primary);
-    color: var(--color-white);
+    background: $color-primary;
+    color: $color-white;
     border-radius: 25px;
     border: none;
 }

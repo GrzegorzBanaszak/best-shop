@@ -37,7 +37,7 @@
 
 .populat__text {
     font-size: 1rem;
-    color: var(--color-gray);
+    color: $color-gray;
 
 }
 
@@ -53,7 +53,7 @@
 }
 
 .eye-icon {
-    background-color: var(--color-primary);
+    background-color: $color-primary;
 }
 
 .eye-icon::after {
@@ -64,7 +64,7 @@
 }
 
 .catalog-icon {
-    background-color: var(--color-green);
+    background-color: $color-green;
 }
 
 .catalog-icon::after {
@@ -76,9 +76,10 @@
 
 @include desktop{
     .popular__content{
+        @include container;
         display: flex;
         justify-content: space-around;
-        margin: 0 9rem;
+        
     }
     .popular__content {
         padding-top: 6.25rem;

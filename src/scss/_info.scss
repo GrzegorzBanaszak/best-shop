@@ -1,8 +1,8 @@
 /* #region Info */
 
 .info {
-    background-color: var(--color-light-grey);
-    padding: 6.5rem 0;
+    background-color:$color-light-grey;
+    padding: 5rem 0;
 }
 
 
@@ -20,7 +20,7 @@
 }
 
 .card-1 {
-    background-color: var(--color-white);
+    background-color:$color-white;
     flex-direction: column-reverse;
 }
 
@@ -44,7 +44,7 @@
     content: '';
     width: 50%;
     height: 5px;
-    background-color: var(--color-redish);
+    background-color:$color-redish;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -66,7 +66,7 @@
     height: 5em;
     transform: rotate(45deg);
     border-radius: 30px;
-    background: var(--color-redish);
+    background:$color-redish;
     top: 6rem;
     right: 0;
 
@@ -81,7 +81,7 @@
 
 .card-2 {
     margin-top: 2.25rem;
-    background-color: var(--color-white);
+    background-color:$color-white;
     flex-direction: column-reverse;
 }
 
@@ -96,7 +96,7 @@
     width: 10rem;
     height: 10rem;
     border-radius: 50%;
-    background-color: var(--color-primary);
+    background-color:$color-primary;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -127,7 +127,7 @@
     content: '';
     width: 50%;
     height: 5px;
-    background-color: var(--color-primary);
+    background-color:$color-primary;
     position: absolute;
     bottom: 0;
     left: 0;
@@ -138,12 +138,12 @@
     margin-top: 2.25rem;
     border: none;
     padding: 0;
-    background-color: var(--color-white);
+    background-color:$color-white;
     flex-direction: column;
 }
 
 .card-3 .info__text {
-    background-color: var(--color-white);
+    background-color:$color-white;
     border: 1px solid #E8E9ED;
     border-radius: 5px;
     padding: $padding-card;
@@ -167,28 +167,30 @@
     content: '';
     width: 50%;
     height: 5px;
-    background-color: var(--color-green);
+    background-color:$color-green;
     position: absolute;
     bottom: 0;
     left: 0;
 }
 
 .card-3 .image__content {
-    background-color: var(--color-green);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-color:$color-green;
     border-radius: 5px;
+
 }
 
 .card-3 .info__image {
-    width: 60%;
+    width: 100%;
 }
 
 /* #endregion */
 
 
 @include desktop{
+
+    .info__content{
+        @include container;
+    }
     .card-1 {
         flex-direction: row;
     }
@@ -249,4 +251,13 @@
         height: 16rem;
     }
 
+    .card-3 .image__content{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-3 .info__image {
+        width: 70%;
+    }
 }

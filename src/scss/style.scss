@@ -16,23 +16,6 @@
     box-sizing: border-box;
 }
 
-:root {
-    --color-primary: #08A6E4;
-    --color-primary-shadow: rgba(7, 172, 230, .16);
-    --color-redish: #FB3B64;
-    --color-green: #55DFB4;
-    --color-black: #000000;
-    --color-gray: #A5A5A5;
-    --color-light-grey: #F7F7F7;
-    --color-white: #fff;
-
-    --cont-width: 1352px;
-
-    --transiton-top-menu: all 0.3s ease-in-out;
-
-    --open-sans: 'Open Sans', sans-serif;
-}
-
 a {
     text-decoration: none;
 }
@@ -41,10 +24,4 @@ a {
 body {
     font-family: 'Raleway',
         sans-serif;
-}
-
-.container {
-    margin: 0 auto;
-    max-width: var(--cont-width);
-    width: 100%;
 }

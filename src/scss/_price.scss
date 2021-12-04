@@ -1,6 +1,6 @@
 .price {
     padding-top: 6.25rem;
-    padding-bottom: 10.75rem;
+    padding-bottom: 5rem;
 }
 
 .price__title {
@@ -20,22 +20,22 @@
     padding: 1.3em 0;
     border-radius: 20px;
     position: relative;
-    box-shadow: 0px 0px 46px 17px var(--color-light-grey);
+    box-shadow: 0px 0px 46px 17px $color-light-grey;
     display: flex;
 }
 
 .card--basic {
-    border: 1px solid var(--color-redish);
+    border: 1px solid $color-redish;
     transform: scale(0.95);
     margin: 0 1em;
 }
 
 .card--professional {
-    border: 1px solid var(--color-primary);
+    border: 1px solid $color-primary;
 }
 
 .card--premium {
-    border: 1px solid var(--color-green);
+    border: 1px solid $color-green;
     transform: scale(0.95);
     margin: 0 1em;
 }
@@ -61,15 +61,15 @@
 }
 
 .amount--basic {
-    color: var(--color-redish);
+    color: $color-redish;
 }
 
 .amount--professional {
-    color: var(--color-primary);
+    color: $color-primary;
 }
 
 .amount--premium {
-    color: var(--color-green);
+    color: $color-green;
 }
 
 .price__limit {
@@ -106,28 +106,35 @@
     font-weight: bold;
     padding: 1rem 3.5rem;
     border-radius: 20px;
-    color: var(--color-white);
+    color: $color-white;
 }
 
 .btn--basic {
-    background: var(--color-redish);
+    background: $color-redish;
 }
 
 .btn--professional {
-    background: var(--color-primary);
+    background: $color-primary;
 }
 
 .btn--premium {
-    background: var(--color-green);
+    background: $color-green;
 }
 
 @include desktop{
+    .price{
+        padding-bottom: 10.75rem;
+    }
+    .price_content{
+        @include container;
+    }
     .price__cards{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
     .price__card{
         flex-direction: column;
+        padding-bottom: 3em;
     }
     .price__header{
         width: 100%;

@@ -6,18 +6,19 @@ footer {
 .footer__content {
     display: flex;
     justify-content: space-between;
+    padding: 0 1em;
 }
 
 .footer__title {
     font-size: 1.625rem;
     font-weight: 300;
-    color: var(--color-primary);
+    color: $color-primary;
     margin-bottom: 0.375rem;
 }
 
 .footer__text {
     font-size: 0.75rem;
-    color: var(--color-gray);
+    color: $color-gray;
 }
 
 .footer__icons {
@@ -39,4 +40,10 @@ footer {
 .icon__twitter {
     background: url("/assets/Twitter.svg");
     margin-right: 1rem;
+}
+
+@include desktop{
+    .footer__content{
+        @include container;
+    }
 }
