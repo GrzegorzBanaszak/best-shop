@@ -1122,52 +1122,16 @@ textarea {
     margin-bottom: 3em;
   }
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-:root {
-  --color-primary: #08A6E4;
-  --color-primary-shadow: rgba(7, 172, 230, .16);
-  --color-redish: #FB3B64;
-  --color-green: #55DFB4;
-  --color-black: #000000;
-  --color-gray: #A5A5A5;
-  --color-light-grey: #F7F7F7;
-  --color-white: #fff;
-  --cont-width: 1352px;
-  --transiton-top-menu: all 0.3s ease-in-out;
-  --open-sans: "Open Sans", sans-serif;
-}
-
-a {
-  text-decoration: none;
-}
-
-body {
-  font-family: "Raleway", sans-serif;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: var(--cont-width);
-  width: 100%;
-}
-
 /* #region Question */
 .question__content {
   display: flex;
-  justify-content: space-around;
-  margin-bottom: 6.75rem;
+  flex-direction: column;
+  margin: 2em 1em;
 }
 
 .question__text {
-  margin-top: 1rem;
-  text-align: center;
-  width: 50%;
-  padding: 0 7.125rem;
+  text-align: left;
+  margin: 2em 0;
 }
 
 .question__title {
@@ -1185,8 +1149,7 @@ body {
   color: var(--color-gray);
   font-size: 1rem;
   font-weight: 600;
-  align-items: center;
-  display: inline-block;
+  display: block;
 }
 
 .question__email {
@@ -1208,7 +1171,6 @@ body {
 .question__form {
   display: flex;
   flex-direction: column;
-  width: 50%;
   font-family: var(--open-sans);
 }
 
@@ -1278,8 +1240,24 @@ body {
   border: none;
 }
 
-/* #endregion */
-/* #region Footer */
+@media screen and (min-width: 1000px) {
+  .question__content {
+    margin: 0 auto;
+    max-width: 1352px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 3em;
+  }
+
+  .question__text {
+    text-align: center;
+  }
+
+  .question__contact p {
+    display: inline-block;
+  }
+}
 footer {
   padding: 1.5rem 0;
   box-shadow: 0px -5px 40px 0px rgba(0, 0, 0, 0.27);
@@ -1323,5 +1301,37 @@ footer {
   margin-right: 1rem;
 }
 
-/* #endregion */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #08A6E4;
+  --color-primary-shadow: rgba(7, 172, 230, .16);
+  --color-redish: #FB3B64;
+  --color-green: #55DFB4;
+  --color-black: #000000;
+  --color-gray: #A5A5A5;
+  --color-light-grey: #F7F7F7;
+  --color-white: #fff;
+  --cont-width: 1352px;
+  --transiton-top-menu: all 0.3s ease-in-out;
+  --open-sans: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: var(--cont-width);
+  width: 100%;
+}
 /*# sourceMappingURL=style.css.map */
