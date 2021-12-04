@@ -605,7 +605,6 @@ textarea {
 }
 /* #region Front */
 .front-section {
-  margin-top: 4rem;
   height: calc(100vh - 4rem);
 }
 
@@ -760,7 +759,7 @@ textarea {
   border: 1px solid #E8E9ED;
   border-radius: 5px;
   padding: 1.2em;
-  margin: 0 3em;
+  margin: 0 2.5em;
   display: flex;
   line-height: 2.5em;
 }
@@ -805,15 +804,11 @@ textarea {
   padding: 1em;
 }
 
-.card-1 .image__content {
-  width: 390px;
-}
-
 .card-1 .image__content::after {
   content: "";
   position: absolute;
-  width: 8em;
-  height: 8em;
+  width: 5em;
+  height: 5em;
   transform: rotate(45deg);
   border-radius: 30px;
   background: var(--color-redish);
@@ -823,7 +818,7 @@ textarea {
 
 .card-1 .info__image {
   position: relative;
-  height: 13.75rem;
+  width: 12rem;
   margin-top: 7rem;
   z-index: 2;
 }
@@ -836,15 +831,14 @@ textarea {
 
 .card-2 .image__content img {
   position: relative;
-  width: 350px;
-  margin-left: 3em;
+  width: 10rem;
 }
 
 .card-2 .image__content::after {
   content: "";
   position: absolute;
-  width: 16rem;
-  height: 16rem;
+  width: 10rem;
+  height: 10rem;
   border-radius: 50%;
   background-color: var(--color-primary);
   left: 50%;
@@ -969,6 +963,27 @@ textarea {
 .card-2 .info__description::after,
 .card-3 .info__description::after {
     display: block;
+  }
+
+  .card-1 .info__image {
+    position: relative;
+    width: 20rem;
+    margin-top: 7rem;
+    z-index: 2;
+  }
+
+  .card-1 .image__content::after {
+    width: 8em;
+    height: 8em;
+  }
+
+  .card-2 .image__content img {
+    width: 350px;
+  }
+
+  .card-2 .image__content::after {
+    width: 16rem;
+    height: 16rem;
   }
 }
 * {
